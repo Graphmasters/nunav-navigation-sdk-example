@@ -33,7 +33,7 @@ This project is divided into two main directories, one for Android and one for i
 
 ### Android
 
-For a step-by-step guide on integrating the navigation SDK into Android, please refer to the [Android directory](Android/).
+For a step-by-step guide on integrating the navigation SDK into Android, please refer to the [Android directory](android/).
 
 ### iOS
 
