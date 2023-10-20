@@ -1,0 +1,87 @@
+#built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+
+# generated files
+bin/
+gen/
+
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Windows thumbnail db
+Thumbs.db
+
+# OSX files
+.DS_Store
+
+# Eclipse project files
+.classpath
+.project
+
+# Firebase
+google-services.json
+
+# Credentials
+.credentials.properties
+
+# Android Studio
+env_var.sh
+build-cache.lock
+.idea/*
+.idea/workspace.xml
+.gradle
+captures
+*.iml
+*/*.iml
+build/
+build-cache/
+.idea/encodings.xml
+.idea/tasks.xml
+/.idea/libraries
+src/main/assets/build_info.properties
+src/main/jniLibs/.svn/
+src/main/jniLibs/armeabi-v7a/.svn/
+src/main/jniLibs/armeabi/.svn/
+src/main/jniLibs/x86/.svn/
+nunav.core/libs/
+nunav/src/main/assets/build_info.properties
+nunav/src/main/jniLibs/.svn/
+nunav/src/main/jniLibs/armeabi-v7a/.svn/
+nunav/src/main/jniLibs/armeabi/.svn/
+nunav/src/main/jniLibs/x86/.svn/
+projectFilesBackup/
+projectFilesBackup1/
+sdktools/docs/.svn/
+sdktools/docs/com/.svn/
+sdktools/docs/com/ngx/.svn/
+sdktools/docs/com/ngx/sdktools/.svn/
+sdktools/docs/com/skobbler/.svn/
+sdktools/docs/com/skobbler/ngx/.svn/
+sdktools/docs/com/skobbler/ngx/sdktools/.svn/
+sdktools/docs/com/skobbler/ngx/sdktools/download/.svn/
+sdktools/docs/com/skobbler/ngx/sdktools/navigationui/.svn/
+sdktools/docs/com/skobbler/ngx/sdktools/navigationui/autonight/.svn/
+sdktools/docs/index-files/.svn/
+sdktools/libs/.svn/
+sdktools/src/.svn/
+sdktools/src/androidTest/.svn/
+sdktools/src/androidTest/java/.svn/
+sdktools/src/androidTest/java/com/.svn/
+sdktools/src/androidTest/java/com/ngx/.svn/
+sdktools/src/androidTest/java/com/ngx/sdktools/.svn/
+sdktools/src/main/.svn/
+sdktools/src/main/java/
+sdktools/src/main/res/.svn/
+sdktools/src/main/res/values/.svn/
+tracker/libs/
+libs/
+
