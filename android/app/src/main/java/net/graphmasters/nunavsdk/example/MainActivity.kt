@@ -1,11 +1,14 @@
 package net.graphmasters.nunavsdk.example
 
 import android.annotation.SuppressLint
+import android.content.Context
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.wrapContentSize
+import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -17,57 +20,41 @@ import net.graphmasters.androidlibrary.NunavSdk
 import net.graphmasters.nunavsdk.example.ui.theme.NUNAVSdkExampleTheme
 
 class MainActivity : ComponentActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        NunavSdk.init(this, "YOUR_API_KEY")
 
         setContent {
             NUNAVSdkExampleTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
-                    Greeting("Android")
+                    Button(
+                        modifier = Modifier.wrapContentSize(),
+                        onClick = { startNavigation(this@MainActivity) }
+                    ) {
+                        Text(text = "Start Navigation")
+                    }
                 }
             }
         }
+
+        NunavSdk.init(this, "YOUR_API_KEY")
     }
+}
 
-    override fun onResume() {
-        super.onResume()
-
-
-        try {
-            startNavigation()
-        } catch (e: Exception) {
-            e.printStackTrace()
-            Toast.makeText(this, e.toString(), Toast.LENGTH_LONG).show()
-        }
-    }
-
-    @SuppressLint("MissingPermission")
-    private fun startNavigation() {
+@SuppressLint("MissingPermission")
+internal fun startNavigation(context: Context) {
+    try {
         NunavSdk.startNavigation(
-            context = this,
+            context = context,
             destination = Destination.Builder()
-                .longitude(52.0)
-                .latitude(9.0)
+                .latitude(52.3780505280251)
+                .longitude(9.743045788541911)
+                .label("Hauptbahnhof")
                 .build()
         )
-    }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    NUNAVSdkExampleTheme {
-        Greeting("Android")
+    } catch (e: Exception) {
+        e.printStackTrace()
+        Toast.makeText(context, e.toString(), Toast.LENGTH_LONG).show()
     }
 }

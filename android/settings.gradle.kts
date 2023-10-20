@@ -15,6 +15,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "NUNAV Sdk Example"
+rootProject.name = "NUNAV SDK Example"
 include(":app")
  
