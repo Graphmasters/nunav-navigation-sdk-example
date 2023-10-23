@@ -3,8 +3,8 @@ name:
 
 on:
   push:
-    paths:
-      - 'android/**'
+#    paths:
+#      - 'android/**'
 
 concurrency:
   group: ${{ github.ref }}
