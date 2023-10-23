@@ -13,8 +13,8 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.ui.Modifier
-import net.graphmasters.androidlibrary.Destination
-import net.graphmasters.androidlibrary.NunavSdk
+import net.graphmasters.nunavsdk.Destination
+import net.graphmasters.nunavsdk.NunavSdk
 import net.graphmasters.nunavsdk.example.ui.theme.NUNAVSdkExampleTheme
 
 class MainActivity : ComponentActivity() {
@@ -36,7 +36,7 @@ class MainActivity : ComponentActivity() {
             }
         }
 
-        // Initialize the SDK with your API key
+        // Initialize the SDK with your API key. This should be done before calling NunavSdk.startNavigation().
         NunavSdk.init(this, "YOUR_API_KEY")
     }
 }
@@ -46,11 +46,11 @@ internal fun startNavigation(context: Context) {
     try {
         // Start navigation to the desired destination.
         // A new activity will be started containing the complete navigation workflow.
+        // Make sure to check for the required permissions before calling this method!!!
         NunavSdk.startNavigation(
             context = context,
             destination = Destination.Builder()
-                .latitude(52.3780505280251)
-                .longitude(9.743045788541911)
+                .location(52.3780505280251, 9.743045788541911)
                 .label("My destination")
                 .build()
         )

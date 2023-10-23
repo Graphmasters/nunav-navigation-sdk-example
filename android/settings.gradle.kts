@@ -11,6 +11,7 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        // Add this repository to allow download the the NUNAV SDK dependency
         maven { url = uri("https://artifactory.graphmasters.net/artifactory/libs-release") }
     }
 }
