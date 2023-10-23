@@ -22,4 +22,4 @@ jobs:
           distribution: 'corretto'
           java-version: '17'
       - name: Build Android debug app
-        run: ./android/gradlew androidApp:assembleDebug
+        run: ./android/gradlew -p android/ androidApp:assembleDebug
