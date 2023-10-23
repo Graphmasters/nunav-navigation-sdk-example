@@ -2,7 +2,9 @@ name:
   Build
 
 on:
-  push
+  push:
+    paths:
+      - 'android/**'
 
 concurrency:
   group: ${{ github.ref }}
@@ -20,4 +22,4 @@ jobs:
           distribution: 'corretto'
           java-version: '17'
       - name: Build Android debug app
-        run: ./gradlew androidApp:assembleDebug
+        run: ./android/gradlew androidApp:assembleDebug

@@ -12,9 +12,7 @@ import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
 import net.graphmasters.androidlibrary.Destination
 import net.graphmasters.androidlibrary.NunavSdk
 import net.graphmasters.nunavsdk.example.ui.theme.NUNAVSdkExampleTheme
@@ -38,6 +36,7 @@ class MainActivity : ComponentActivity() {
             }
         }
 
+        // Initialize the SDK with your API key
         NunavSdk.init(this, "YOUR_API_KEY")
     }
 }
@@ -45,12 +44,14 @@ class MainActivity : ComponentActivity() {
 @SuppressLint("MissingPermission")
 internal fun startNavigation(context: Context) {
     try {
+        // Start navigation to the desired destination.
+        // A new activity will be started containing the complete navigation workflow.
         NunavSdk.startNavigation(
             context = context,
             destination = Destination.Builder()
                 .latitude(52.3780505280251)
                 .longitude(9.743045788541911)
-                .label("Hauptbahnhof")
+                .label("My destination")
                 .build()
         )
     } catch (e: Exception) {
