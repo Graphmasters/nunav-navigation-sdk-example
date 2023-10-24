@@ -2,6 +2,8 @@
 
 This project serves as an example and guide for integrating the NUNAV SDK into Android and iOS apps.
 
+![Preview](android/docs/navigation.gif)
+
 ## Table of Contents
 
 - [About the Project](#about-the-project)
