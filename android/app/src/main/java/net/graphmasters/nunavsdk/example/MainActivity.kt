@@ -37,7 +37,7 @@ class MainActivity : ComponentActivity() {
         }
 
         // Initialize the SDK with your API key. This should be done before calling NunavSdk.startNavigation().
-        NunavSdk.init(this, "YOUR_API_KEY")
+        NunavSdk.init(this, "eXRnTFFBM0VLMHFTZmlwaXFQcE1aZk5wRnJTS3hOejE6TDFTOG9LR21fMDFZeVRNbEtRdmxDOTctOVRKZk9kM1BHeE5YeHNrYzBfZmdDdVV4VGlzWG8yWDQ3TkFiRC0tTQ==")
     }
 }
 
