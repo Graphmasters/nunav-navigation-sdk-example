@@ -1,4 +1,4 @@
-# NUNAV SDK Example iOS Android
+# NUNAV SDK Example Android
 
 ## About The Project
 
