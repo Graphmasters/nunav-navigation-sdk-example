@@ -45,8 +45,7 @@ Explain how developers can utilize the navigation features in their apps once th
 
 ## Request an API Key
 
-If you wish to request an API key to use the navigation SDK, please contact us via [Mail](mailto:your-email@example.com). We will be happy to provide you with further information on obtaining an API key.
-
+If you wish to request an API key to use the navigation SDK, please contact us via [Mail](mailto:info@graphmasters.net). We will be happy to provide you with further information on obtaining an API key.
 
 ## License
 

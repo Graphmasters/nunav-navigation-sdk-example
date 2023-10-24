@@ -51,7 +51,7 @@ calling `NunavSdk.startNavigation`:
 * ACCESS_COARSE_LOCATION
 * ACCESS_FOREGROUND_SERVICE (Android 10+)
 
-## Contact
+## Request an API Key
 
-info@graphmasters.net
+If you wish to request an API key to use the navigation SDK, please contact us via [Mail](mailto:info@graphmasters.net). We will be happy to provide you with further information on obtaining an API key.
 
