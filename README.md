@@ -58,7 +58,3 @@ If you wish to request an API key to use the navigation SDK, please contact us v
 ## License
 
 This project is licensed under the [Apache 2.0 License](LICENSE). For more information on the Apache 2.0 License, please see the [License file](LICENSE).
-
-## Contact
-
-If you have any questions or comments, please contact us at [Your Email Address](info@graphmasters.net).
