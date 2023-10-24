@@ -5,7 +5,8 @@
 To serve as a hands on example, this project will demonstrate the integration and usage of the `Nunav SDK` for Android
 via a simple example app.
 
-![Preview](https://github.com/Graphmasters/navigation-android-example/blob/main/preview.png)
+![Preview](docs/navigation.png)
+![Preview](docs/navigation.gif)
 
 ## Integration
 
