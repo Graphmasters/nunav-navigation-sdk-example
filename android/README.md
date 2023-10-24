@@ -10,14 +10,14 @@ via a simple example app.
 ## Integration
 
 1. Repository
-   Add the following repository to your project's `build.gradle` file:
+* Add the following repository to your project's `build.gradle` file:
 
 ```
 maven { url = uri("https://artifactory.graphmasters.net/artifactory/libs-release") }
 ```
 
 2. Gradle dependency
-   Add the following dependency to your app's `build.gradle` file:
+* Add the following dependency to your app's `build.gradle` file:
 
 ```
 implementation("net.graphmasters.multiplatform:nunav-sdk-android:{VERSION}")
