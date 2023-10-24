@@ -5,19 +5,25 @@ This project serves as an example and guide for integrating the NUNAV SDK into A
 ## Table of Contents
 
 - [About the Project](#about-the-project)
+- [Features](#features-of-the-nunav-sdk)
 - [Prerequisites](#prerequisites)
 - [Integration](#integration)
     - [Android](#android)
     - [iOS](#ios)
 - [Usage](#usage)
 - [Request an API Key](#request-an-api-key)
-- [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
 
 ## About the Project
 
 This project provides developers with instructions for integrating a navigation SDK into their Android and iOS apps. Integrating a navigation SDK can enable advanced navigation features such as GPS navigation, map views, and direction calculations in apps.
+
+## Features of the NUNAV SDK
+
+* Full turn by turn navigation
+* Voice instructions
+* Dark and light mode (depending on the system settings)
 
 ## Prerequisites
 
