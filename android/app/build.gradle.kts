@@ -66,5 +66,5 @@ dependencies {
     implementation(platform("androidx.compose:compose-bom:2023.03.00"))
 
     // Add the dependency for the NUNAV SDK here
-    implementation("net.graphmasters.multiplatform:nunav-sdk-android:1.0.0")
+    implementation("net.graphmasters.multiplatform:nunav-sdk-android:1.0.1")
 }
