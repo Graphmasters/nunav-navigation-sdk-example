@@ -53,5 +53,5 @@ calling `NunavSdk.startNavigation`:
 
 ## Request an API Key
 
-If you wish to request an API key to use the navigation SDK, please contact us via [Mail](mailto:info@graphmasters.net). We will be happy to provide you with further information on obtaining an API key.
+If you wish to request an API key to use the navigation SDK, please contact us via [Mail](mailto:support@graphmasters.net). We will be happy to provide you with further information on obtaining an API key.
 
