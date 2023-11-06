@@ -54,7 +54,7 @@ dependencies: [
 ### Add Permissions
 
 1. Add `NSLocationWhenInUseUsageDescription` key to `Info.plist` and provide a proper usage description. For more information refer to [Apple Developer Documenation]("https://developer.apple.com/documentation/bundleresources/information_property_list/nslocationwheninuseusagedescription")
-2. Add background modes to `info.plist` for enabling the navigation to run if the app is in background.
+2. Add background modes ([`UIBackgroundModes`](https://developer.apple.com/documentation/bundleresources/information_property_list/uibackgroundmodes)) to `info.plist` for enabling the navigation to run if the app is in background.
 
 ```
 <array>
