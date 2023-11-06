@@ -53,8 +53,12 @@ Usage examples can be found in the platform directories ([iOS](ios/) and [Androi
 
 ## Request an API Key
 
-If you wish to request an API key to use the navigation SDK, please contact us via [Mail](mailto:info@graphmasters.net). We will be happy to provide you with further information on obtaining an API key.
+If you wish to request an API key to use the navigation SDK, please contact us via [Mail](mailto:support@graphmasters.net). We will be happy to provide you with further information on obtaining an API key.
 
 ## License
 
 This project is licensed under the [Apache 2.0 License](LICENSE). For more information on the Apache 2.0 License, please see the [License file](LICENSE).
+
+## Contact
+
+If you have any questions or comments, please contact our [Support](mailto:support@graphmasters.net). We will be happy to help you.
