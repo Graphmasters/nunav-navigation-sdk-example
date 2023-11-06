@@ -7,11 +7,13 @@
 
 
 > **Note**  
-> This repository contains an example app for using the NUNAV SDK. It contains example navigation destinations and uses the SDK via the [Swift Package Manager](https://www.swift.org/package-manager/). The SDK itself can be found in the [distribution repository]("https://github.com/graphmasters/nunav-sdk-ios-distribution").
+> This repository contains an example app for using the NUNAV SDK. It contains example navigation destinations and uses the SDK via the [Swift Package Manager](https://www.swift.org/package-manager/). The SDK itself can be found in the [distribution repository](https://github.com/graphmasters/nunav-sdk-ios-distribution).
 > Please contact Grapmasters GmbH directly if you have any issues.
 
 ---
+
 ![Preview](docs/navigation.gif) 
+
 ---
 
 ## Getting Started
