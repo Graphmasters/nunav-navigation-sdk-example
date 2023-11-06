@@ -45,11 +45,11 @@ For a step-by-step guide on integrating the navigation SDK into Android, please 
 
 ### iOS
 
-For a step-by-step guide on integrating the navigation SDK into iOS, please refer to the [iOS directory](iOS/).
+For a step-by-step guide on integrating the navigation SDK into iOS, please refer to the [iOS directory](ios/).
 
 ## Usage
 
-Explain how developers can utilize the navigation features in their apps once the integration is complete. Provide examples and use cases.
+Usage examples can be found in the platform directories ([iOS](ios/) and [Android](android/))
 
 ## Request an API Key
 
