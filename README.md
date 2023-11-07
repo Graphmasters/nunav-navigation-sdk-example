@@ -1,6 +1,6 @@
-# NUNAV SDK Example Integration for Android and iOS
+# NUNAV Navigation SDK Example Integration for Android and iOS
 
-This project serves as an example and guide for integrating the NUNAV SDK into Android and iOS apps.
+This project serves as an example and guide for integrating the NUNAV Navigation SDK into Android and iOS apps.
 
 ![Preview](android/docs/navigation.gif)
 
