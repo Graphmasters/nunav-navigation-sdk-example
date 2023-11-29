@@ -25,8 +25,8 @@ implementation("net.graphmasters.multiplatform:nunav-sdk-android:{VERSION}")
 
 3. Initialize the NunavSdk with your API-Key. This only needs to happen once and must happen before using the SDK.
 
-```
-NunavSdk.init((context, "Your API-key")
+```kotlin
+NunavSdk.init(context, "Your API-key")
 ```
 
 4. To start the navigation you must pass a destination to the SDK. This can be done by calling the `startNavigation`
