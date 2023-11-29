@@ -32,7 +32,7 @@ NunavSdk.init((context, "Your API-key")
 4. To start the navigation you must pass a destination to the SDK. This can be done by calling the `startNavigation`
    method on the `NunavSdk` instance. Use the `Destination.Builder` to create a destination.
 
-```
+```kotlin
 NunavSdk.startNavigation(
             context = context,
             destination = Destination.Builder()
