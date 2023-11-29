@@ -2,7 +2,7 @@
 
 ## About The Project
 
-To serve as a hands on example, this project will demonstrate the integration and usage of the `Nunav SDK` for Android
+To serve as a hands on example, this project will demonstrate the integration and usage of the `NUNAV SDK` for Android
 via a simple example app.
 
 ![Preview](docs/navigation.gif)
