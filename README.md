@@ -53,7 +53,7 @@ Usage examples can be found in the platform directories ([iOS](ios/) and [Androi
 
 ## Request an API Key
 
-If you wish to request an API key to use the navigation SDK, please contact us via [Mail](mailto:support@graphmasters.net). We will be happy to provide you with further information on obtaining an API key.
+If you wish to request an API key to use the navigation SDK, please contact us via the API-Key-Button on our [SDK-Website](https://www.nunav.net/lp/sdk) or [Mail](mailto:support@graphmasters.net). We will be happy to provide you with further information on obtaining an API key.
 
 ## License
 
