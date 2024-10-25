@@ -49,7 +49,7 @@ For a step-by-step guide on integrating the navigation SDK into iOS, please refe
 
 ## Usage
 
-Usage examples can be found in the platform directories ([iOS](ios/) and [Android](android/))
+Usage examples can be found in the platform directories ([iOS](iOS/) and [Android](android/))
 
 ## Request an API Key
 
