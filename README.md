@@ -45,7 +45,7 @@ For a step-by-step guide on integrating the navigation SDK into Android, please 
 
 ### iOS
 
-For a step-by-step guide on integrating the navigation SDK into iOS, please refer to the [iOS directory](ios/).
+For a step-by-step guide on integrating the navigation SDK into iOS, please refer to the [iOS directory](iOS/).
 
 ## Usage
 
