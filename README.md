@@ -2,7 +2,7 @@
 
 This project serves as an example and guide for integrating the NUNAV Navigation SDK into Android and iOS apps.
 
-![Preview](android/docs/navigation.gif)
+<img src="android/docs/navigation.gif" width="250"> <img src="iOS/docs/navigation.gif" width="257">
 
 ## About the Project
 
