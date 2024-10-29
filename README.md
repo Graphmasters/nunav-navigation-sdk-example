@@ -4,22 +4,9 @@ This project serves as an example and guide for integrating the NUNAV Navigation
 
 ![Preview](android/docs/navigation.gif)
 
-## Table of Contents
-
-- [About the Project](#about-the-project)
-- [Features](#features-of-the-nunav-sdk)
-- [Prerequisites](#prerequisites)
-- [Integration](#integration)
-    - [Android](#android)
-    - [iOS](#ios)
-- [Usage](#usage)
-- [Request an API Key](#request-an-api-key)
-- [License](#license)
-- [Contact](#contact)
-
 ## About the Project
 
-This project provides developers with instructions for integrating a navigation SDK into their Android and iOS apps. Integrating a navigation SDK can enable advanced navigation features such as GPS navigation, map views, and direction calculations in apps.
+This project provides developers with instructions for integrating the NUNAV Navigation SDK into their Android and iOS apps.
 
 ## Features of the NUNAV SDK
 
@@ -46,10 +33,6 @@ For a step-by-step guide on integrating the navigation SDK into Android, please 
 ### iOS
 
 For a step-by-step guide on integrating the navigation SDK into iOS, please refer to the [iOS directory](iOS/).
-
-## Usage
-
-Usage examples can be found in the platform directories ([iOS](iOS/) and [Android](android/))
 
 ## Request an API Key
 
