@@ -51,6 +51,11 @@ dependencies: [
 
 3. Choose "Next". Xcode should clone the distribution repository and download the binaries.
 
+### Enable localization and asset macros
+
+1. Enable the `SwiftGenAssetsPlugin` plugin provided by the NUNAV Navigation SDK.
+2. Enable the `SwiftGenLocalizationPlugin` plugin provided by the NUNAV Navigation SDK.
+
 ### Add Permissions
 
 1. Add `NSLocationWhenInUseUsageDescription` key to `Info.plist` and provide a proper usage description. For more information refer to [Apple Developer Documenation]("https://developer.apple.com/documentation/bundleresources/information_property_list/nslocationwheninuseusagedescription")
@@ -63,7 +68,6 @@ dependencies: [
     <string>location</string>
 </array>
 ```
-
 
 ### Request an API Key
 
