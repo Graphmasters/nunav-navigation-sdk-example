@@ -1,11 +1,16 @@
 package net.graphmasters.nunavsdk.example
 
+import android.Manifest
 import android.annotation.SuppressLint
 import android.content.Context
+import android.content.pm.PackageManager
+import android.os.Build
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.activity.enableEdgeToEdge
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.wrapContentSize
 import androidx.compose.material3.Button
@@ -13,22 +18,49 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.ui.Modifier
+import androidx.core.content.ContextCompat
 import net.graphmasters.nunavsdk.Destination
 import net.graphmasters.nunavsdk.NunavSdk
 import net.graphmasters.nunavsdk.example.ui.theme.NUNAVSdkExampleTheme
 
-class MainActivity : ComponentActivity() {
+class MainActivity: ComponentActivity() {
+
+    private val requestPermissionLauncher =
+        registerForActivityResult(ActivityResultContracts.RequestMultiplePermissions()) {
+            if (this.allNeededPermissionsGranted()) {
+                startNavigation(this)
+            } else {
+                Toast.makeText(
+                    this,
+                    "Location and post notifications permissions required for navigation",
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
+        }
+
+    private val neededPermissions = arrayOf(
+        Manifest.permission.ACCESS_COARSE_LOCATION,
+        Manifest.permission.ACCESS_FINE_LOCATION,
+        *if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            arrayOf(Manifest.permission.POST_NOTIFICATIONS)
+        } else {
+            emptyArray()
+        }
+    )
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
 
         setContent {
-            NUNAVSdkExampleTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
+            NUNAVSdkExampleTheme() {
+                Surface(
+                    modifier = Modifier.fillMaxSize(),
+                    color = MaterialTheme.colorScheme.background
+                ) {
                     Button(
                         modifier = Modifier.wrapContentSize(),
-                        onClick = { startNavigation(this@MainActivity) }
+                        onClick = { this.startNavigation(this) }
                     ) {
                         Text(text = "Start Navigation")
                     }
@@ -36,26 +68,34 @@ class MainActivity : ComponentActivity() {
             }
         }
 
-        // Initialize the SDK with your API key. This should be done before calling NunavSdk.startNavigation().
-        NunavSdk.init(this, "YOUR_API_KEY")
+        // Initialize the NUNAV SDK with your api key.
+        NunavSdk.init(this, "Your API-key")
     }
-}
 
-@SuppressLint("MissingPermission")
-internal fun startNavigation(context: Context) {
-    try {
-        // Start navigation to the desired destination.
-        // A new activity will be started containing the complete navigation workflow.
-        // Make sure to check for the required permissions before calling this method!!!
-        NunavSdk.startNavigation(
-            context = context,
-            destination = Destination.Builder()
-                .location(52.3780505280251, 9.743045788541911)
-                .label("My destination")
-                .build()
-        )
-    } catch (e: Exception) {
-        e.printStackTrace()
-        Toast.makeText(context, e.toString(), Toast.LENGTH_LONG).show()
+    private fun allNeededPermissionsGranted(): Boolean =
+        neededPermissions.all { permission ->
+            ContextCompat.checkSelfPermission(this, permission) == PackageManager.PERMISSION_GRANTED
+        }
+
+    @SuppressLint("MissingPermission")
+    private fun startNavigation(context: Context) {
+        if (allNeededPermissionsGranted()) {
+            try {
+                // Start navigation to the desired destination.
+                // A new activity will be started containing the complete navigation workflow.
+                // Make sure to check for the required permissions before calling this method!!!
+                NunavSdk.startNavigation(
+                    context = context,
+                    destination = Destination.Builder()
+                        .location(52.376169, 9.741784)
+                        .label("Hanover Central Station")
+                        .build()
+                )
+            } catch (e: Exception) {
+                Toast.makeText(context, e.toString(), Toast.LENGTH_LONG).show()
+            }
+        } else {
+            this.requestPermissionLauncher.launch(neededPermissions)
+        }
     }
 }
