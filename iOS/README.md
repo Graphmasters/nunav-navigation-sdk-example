@@ -71,7 +71,7 @@ dependencies: [
 
 ### Request an API Key
 
-If you wish to request an API key to use the NUNAV SDK, please contact us via [Mail](mailto:info@graphmasters.net). We will be happy to provide you with further information on obtaining an API key and access the service.
+If you wish to request an API key to use the NUNAV SDK, please contact our [Support](https://nunav.net/lp/sdk). We will be happy to provide you with further information on obtaining an API key and access the service.
 
 ### Configure SDK
 

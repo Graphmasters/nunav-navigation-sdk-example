@@ -52,7 +52,7 @@ calling `NunavSdk.startNavigation`:
    * POST_NOTIFICATIONS
 
 ## Request an API Key
-If you wish to request an API key to use the navigation SDK, please contact us via [Mail](mailto:support@graphmasters.net). We will be happy to provide you with further information on obtaining an API key.
+If you wish to request an API key to use the navigation SDK, please contact our [Support](https://nunav.net/lp/sdk). We will be happy to provide you with further information on obtaining an API key.
 
 ## Dependencies of NUNAV SDK
 The sdk depends currently on the following dependencies:

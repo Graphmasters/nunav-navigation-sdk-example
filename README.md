@@ -44,4 +44,4 @@ This project is licensed under the [Apache 2.0 License](LICENSE). For more infor
 
 ## Contact
 
-If you have any questions or comments, please contact our [Support](mailto:support@graphmasters.net). We will be happy to help you.
+If you have any questions or comments, please contact our [Support](https://nunav.net/lp/sdk). We will be happy to help you.
