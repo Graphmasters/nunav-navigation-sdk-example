@@ -55,7 +55,7 @@ calling `NunavSdk.startNavigation`:
 If you wish to request an API key to use the navigation SDK, please contact our [Support](https://nunav.net/lp/sdk). We will be happy to provide you with further information on obtaining an API key.
 
 ## Dependencies of NUNAV SDK
-The sdk depends currently on the following dependencies:
+The sdk depends on the following dependencies:
 1. Jetpack Compose: `"androidx.compose:compose-bom:2024.10.01"`
 2. Kotlin Plugin: `"org.jetbrains.kotlin.android:2.0.0"`
 
