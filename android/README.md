@@ -19,7 +19,7 @@ via a simple example app.
    ```
    implementation("net.graphmasters.multiplatform:nunav-sdk-android:{VERSION}")
    ```
-   The current version is `0.0.9` (November 2024).
+   The current version is `1.0.9` (November 2024).
 
 ### Start Navigation
 1. Initialize the NunavSdk with your API-Key. This only needs to happen once and must happen before using the SDK.
