@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6D04B51B2AF9177B001EDE62 /* NunavSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 6D04B51A2AF9177B001EDE62 /* NunavSDK */; };
+		650849F82D54071D002BC270 /* NunavNavigationSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 650849F72D54071D002BC270 /* NunavNavigationSDK */; };
 		7555FF7F242A565900829871 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF7E242A565900829871 /* AppDelegate.swift */; };
 		7555FF81242A565900829871 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF80242A565900829871 /* SceneDelegate.swift */; };
 		7555FF85242A565B00829871 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7555FF84242A565B00829871 /* Assets.xcassets */; };
@@ -33,7 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D04B51B2AF9177B001EDE62 /* NunavSDK in Frameworks */,
+				650849F82D54071D002BC270 /* NunavNavigationSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,7 +113,7 @@
 			);
 			name = ExampleApp;
 			packageProductDependencies = (
-				6D04B51A2AF9177B001EDE62 /* NunavSDK */,
+				650849F72D54071D002BC270 /* NunavNavigationSDK */,
 			);
 			productName = iosApp;
 			productReference = 7555FF7B242A565900829871 /* ExampleApp.app */;
@@ -146,7 +146,7 @@
 			);
 			mainGroup = 7555FF72242A565900829871;
 			packageReferences = (
-				6D04B5192AF9177B001EDE62 /* XCRemoteSwiftPackageReference "nunav-sdk-ios-distribution" */,
+				650849F62D54071D002BC270 /* XCRemoteSwiftPackageReference "nunav-navigation-sdk-ios-distribution" */,
 			);
 			productRefGroup = 7555FF7C242A565900829871 /* Products */;
 			projectDirPath = "";
@@ -394,21 +394,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		6D04B5192AF9177B001EDE62 /* XCRemoteSwiftPackageReference "nunav-sdk-ios-distribution" */ = {
+		650849F62D54071D002BC270 /* XCRemoteSwiftPackageReference "nunav-navigation-sdk-ios-distribution" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Graphmasters/nunav-sdk-ios-distribution";
+			repositoryURL = "https://github.com/Graphmasters/nunav-navigation-sdk-ios-distribution";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.1;
+				minimumVersion = 2.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		6D04B51A2AF9177B001EDE62 /* NunavSDK */ = {
+		650849F72D54071D002BC270 /* NunavNavigationSDK */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6D04B5192AF9177B001EDE62 /* XCRemoteSwiftPackageReference "nunav-sdk-ios-distribution" */;
-			productName = NunavSDK;
+			package = 650849F62D54071D002BC270 /* XCRemoteSwiftPackageReference "nunav-navigation-sdk-ios-distribution" */;
+			productName = NunavNavigationSDK;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

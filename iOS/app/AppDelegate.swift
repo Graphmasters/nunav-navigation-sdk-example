@@ -1,6 +1,5 @@
 import CoreLocation
-import NunavSDK
-import NunavSDKMultiplatform
+import NunavNavigationSDK
 import UIKit
 
 @UIApplicationMain
@@ -9,12 +8,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         _: UIApplication,
         didFinishLaunchingWithOptions _: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
-        NunavSDK.configure(
+        NunavNavigationSDK.configure(
             apiKey: "",
             serviceUrl: ""
         )
-        GMLog.shared.append(logger: PrintLogger())
-
         CLLocationManager().requestWhenInUseAuthorization()
 
         return true
