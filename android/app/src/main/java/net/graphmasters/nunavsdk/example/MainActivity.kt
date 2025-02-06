@@ -19,7 +19,6 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.ui.Modifier
 import androidx.core.content.ContextCompat
-import net.graphmasters.nunavsdk.Destination
 import net.graphmasters.nunavsdk.NunavSdk
 import net.graphmasters.nunavsdk.example.ui.theme.NUNAVSdkExampleTheme
 
@@ -69,13 +68,8 @@ class MainActivity: ComponentActivity() {
         }
 
         // Initialize the NUNAV SDK with your api key.
-        NunavSdk.init(this, "Your API-key")
+        NunavSdk.initialize(this, "Your API-key")
     }
-
-    private fun allNeededPermissionsGranted(): Boolean =
-        neededPermissions.all { permission ->
-            ContextCompat.checkSelfPermission(this, permission) == PackageManager.PERMISSION_GRANTED
-        }
 
     @SuppressLint("MissingPermission")
     private fun startNavigation(context: Context) {
@@ -83,13 +77,11 @@ class MainActivity: ComponentActivity() {
             try {
                 // Start navigation to the desired destination.
                 // A new activity will be started containing the complete navigation workflow.
-                // Make sure to check for the required permissions before calling this method!!!
+                // Make sure to check for the required permissions before calling this method!
                 NunavSdk.startNavigation(
-                    context = context,
-                    destination = Destination.Builder()
-                        .location(52.376169, 9.741784)
-                        .label("Hanover Central Station")
-                        .build()
+                    context = this,
+                    latitude = 52.376169,
+                    longitude = 9.741784
                 )
             } catch (e: Exception) {
                 Toast.makeText(context, e.toString(), Toast.LENGTH_LONG).show()
@@ -98,4 +90,9 @@ class MainActivity: ComponentActivity() {
             this.requestPermissionLauncher.launch(neededPermissions)
         }
     }
+
+    private fun allNeededPermissionsGranted(): Boolean =
+        neededPermissions.all { permission ->
+            ContextCompat.checkSelfPermission(this, permission) == PackageManager.PERMISSION_GRANTED
+        }
 }
