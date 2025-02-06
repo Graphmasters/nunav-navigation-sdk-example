@@ -16,9 +16,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: windowScene)
         window.rootViewController = UIHostingController(
             rootView: MainView(
-                selectionAction: { coordinate, routingConfig in
+                selectionAction: { destinationConfiguration, routingConfig in
                     guard let viewController = try? NunavNavigationUI.makeNavigationViewController(
-                        destinationConfiguration: DestinationConfiguration(coordinate: coordinate),
+                        destinationConfiguration: destinationConfiguration,
                         routingConfiguration: routingConfig
                     ) else {
                         return
