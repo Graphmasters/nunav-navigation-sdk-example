@@ -17,7 +17,7 @@
 
 ## Documentation
 
-The full documentation for the NUNAV SDK can be found at [docs.nunav.net](https://docs.nunav.net/).
+The full documentation for the NUNAV SDK can be found [here](https://graphmasters.github.io/nunav-sdk/ios/documentation/nunavnavigationsdk/).
 
 ## Getting started
 
