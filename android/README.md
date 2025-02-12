@@ -19,7 +19,9 @@ via a simple example app.
    ```
    implementation("net.graphmasters.multiplatform:nunav-sdk-android:{VERSION}")
    ```
+
    The current version is `2.0.3` (February 2025).
+
 ### Start Navigation
 1. Initialize the NunavSdk with your API-Key. This only needs to happen once and must happen before using the SDK.
    ```kotlin
@@ -47,6 +49,7 @@ calling `NunavSdk.startNavigation`:
 If you wish to request an API key to use the navigation SDK, please contact our [Support](https://nunav.net/lp/sdk). We will be happy to provide you with further information on obtaining an API key.
 
 ## Dependencies of NUNAV SDK
+
 The sdk depends currently on the following dependencies:
 1. Jetpack Compose: `"androidx.compose:compose-bom:2025.01.01"`
 2. Kotlin Plugin: `"org.jetbrains.kotlin.android:2.0.0"`

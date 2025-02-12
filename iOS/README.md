@@ -5,91 +5,21 @@
 [![Requires Swift 5.9](https://img.shields.io/badge/Swift-5.9-FA7343.svg?style=flat&logo=Swift)](https://swift.org/)
 [![SPM compatible](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-FA7343.svg?style=flat&logo=Swift)](https://swift.org/package-manager/)
 
-
-> **Note**  
-> This repository contains an example app for using the NUNAV SDK. It contains example navigation destinations and uses the SDK via the [Swift Package Manager](https://www.swift.org/package-manager/). The SDK itself can be found in the [distribution repository](https://github.com/graphmasters/nunav-sdk-ios-distribution).
-> Please contact Grapmasters GmbH directly if you have any issues.
-
----
-
-![Preview](docs/navigation.gif) 
+> **Note**
+> This repository contains an example app for using the NUNAV SDK. It contains example navigation destinations and uses the SDK via the [Swift Package Manager](https://www.swift.org/package-manager/). The SDK itself can be found in the [distribution repository](https://github.com/graphmasters/nunav-navigation-sdk-ios-distribution).
+> Please contact Graphmasters GmbH directly if you have any issues.
 
 ---
 
-## Getting Started
+<img src="docs/navigation.gif" width="250">
 
-### Integrate Dependency
+---
 
-NunavSDK for iOS is distributed using the [Swift Package Manager](https://www.swift.org/package-manager/). To add it to your project, follow the steps below.
+## Documentation
 
-#### Package.swift
+The full documentation for the NUNAV SDK can be found [here](https://graphmasters.github.io/nunav-sdk/ios/documentation/nunavnavigationsdk/).
 
-1. Add the following to your dependencies.
+## Getting started
 
-```
-dependencies: [
-    .package(url: "https://github.com/graphmasters/nunav-sdk-ios-distribution", from: "<VERSION>")
-]
-```
-
-2. Add the dependency to your target.
-
-```
-.target(
-    name: "Mytarget",
-    dependencies: [
-        .product(name: "NunavSDK", package: "nunav-sdk-ios-distribution")
-    ]
-)
-```
-
-#### Xcode
-
-1. To add a package dependency to your Xcode project, select File > Swift Packages > Add Package Dependency and enter its repository URL. You can also navigate to your target’s General pane, and in the “Frameworks, Libraries, and Embedded Content” section, click the + button, select Add Other, and choose Add Package Dependency.
-
-2. Either add NunavSDK GitHub distribution URL `https://github.com/graphmasters/nunav-sdk-ios-distribution` or search for `nunav-sdk-ios-distribution` package.
-
-3. Choose "Next". Xcode should clone the distribution repository and download the binaries.
-
-### Enable localization and asset macros
-
-1. Enable the `SwiftGenAssetsPlugin` plugin provided by the NUNAV Navigation SDK.
-2. Enable the `SwiftGenLocalizationPlugin` plugin provided by the NUNAV Navigation SDK.
-
-### Add Permissions
-
-1. Add `NSLocationWhenInUseUsageDescription` key to `Info.plist` and provide a proper usage description. For more information refer to [Apple Developer Documenation]("https://developer.apple.com/documentation/bundleresources/information_property_list/nslocationwheninuseusagedescription")
-2. Add background modes ([`UIBackgroundModes`](https://developer.apple.com/documentation/bundleresources/information_property_list/uibackgroundmodes)) to `info.plist` for enabling the navigation to run if the app is in background.
-
-```
-<array>
-    <string>audio</string>
-    <string>fetch</string>
-    <string>location</string>
-</array>
-```
-
-### Request an API Key
-
-If you wish to request an API key to use the NUNAV SDK, please contact our [Support](https://nunav.net/lp/sdk). We will be happy to provide you with further information on obtaining an API key and access the service.
-
-### Configure SDK
-
-1. To use the NUNAV SDK it has to be configured before use. Otherwise your app will crash.
-
-```
-NunavSDK.configure(
-    apiKey: "YOUR_API_KEY",
-    serviceUrl: "SERVICE_URL"
-)
-```
-
-2. [Request location permission](https://developer.apple.com/documentation/corelocation/requesting_authorization_to_use_location_services) 
-3. Create NavigationViewController and present it.
-
-```
-let navigationViewController = try! NavigationUI.makeNavigationUI(
-    destinationCoordinate: coordinate
-)
-self.present(navigationViewController, animated: true)
-```
+To start right away with the NUNAV SDK, visit the [Getting Started Guide]() and clone this repository. To try this 
+example you have to use an API Key. This can be found on the [NUNAV Navigation SDK Portal](https://nunav.net/lp/sdk).

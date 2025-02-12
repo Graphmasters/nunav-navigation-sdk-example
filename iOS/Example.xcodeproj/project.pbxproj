@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6D04B51B2AF9177B001EDE62 /* NunavSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 6D04B51A2AF9177B001EDE62 /* NunavSDK */; };
+		650849F82D54071D002BC270 /* NunavNavigationSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 650849F72D54071D002BC270 /* NunavNavigationSDK */; };
+		6DD124F52D54B59A005DF446 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD124F42D54B597005DF446 /* ContentView.swift */; };
 		7555FF7F242A565900829871 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF7E242A565900829871 /* AppDelegate.swift */; };
 		7555FF81242A565900829871 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF80242A565900829871 /* SceneDelegate.swift */; };
 		7555FF85242A565B00829871 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7555FF84242A565B00829871 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 		6D04B5222AF91C8B001EDE62 /* Buro_round_trip.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Buro_round_trip.gpx; sourceTree = "<group>"; };
 		6D04B5232AF91E0C001EDE62 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6D60420F2AC5C4C200C7FA8A /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		6DD124F42D54B597005DF446 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7555FF7B242A565900829871 /* ExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7555FF7E242A565900829871 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7555FF80242A565900829871 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,7 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D04B51B2AF9177B001EDE62 /* NunavSDK in Frameworks */,
+				650849F82D54071D002BC270 /* NunavNavigationSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +84,7 @@
 			children = (
 				7555FF7E242A565900829871 /* AppDelegate.swift */,
 				7555FF80242A565900829871 /* SceneDelegate.swift */,
+				6DD124F42D54B597005DF446 /* ContentView.swift */,
 				7555FF84242A565B00829871 /* Assets.xcassets */,
 				7555FF89242A565B00829871 /* LaunchScreen.storyboard */,
 				7555FF8C242A565B00829871 /* Info.plist */,
@@ -113,7 +116,7 @@
 			);
 			name = ExampleApp;
 			packageProductDependencies = (
-				6D04B51A2AF9177B001EDE62 /* NunavSDK */,
+				650849F72D54071D002BC270 /* NunavNavigationSDK */,
 			);
 			productName = iosApp;
 			productReference = 7555FF7B242A565900829871 /* ExampleApp.app */;
@@ -127,7 +130,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 1620;
 				ORGANIZATIONNAME = orgName;
 				TargetAttributes = {
 					7555FF7A242A565900829871 = {
@@ -146,7 +149,7 @@
 			);
 			mainGroup = 7555FF72242A565900829871;
 			packageReferences = (
-				6D04B5192AF9177B001EDE62 /* XCRemoteSwiftPackageReference "nunav-sdk-ios-distribution" */,
+				650849F62D54071D002BC270 /* XCRemoteSwiftPackageReference "nunav-navigation-sdk-ios-distribution" */,
 			);
 			productRefGroup = 7555FF7C242A565900829871 /* Products */;
 			projectDirPath = "";
@@ -176,6 +179,7 @@
 			files = (
 				7555FF7F242A565900829871 /* AppDelegate.swift in Sources */,
 				7555FF81242A565900829871 /* SceneDelegate.swift in Sources */,
+				6DD124F52D54B59A005DF446 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,7 +329,7 @@
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = app/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "NUNAV SDK Example";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -353,7 +357,7 @@
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = app/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "NUNAV SDK Example";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -394,21 +398,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		6D04B5192AF9177B001EDE62 /* XCRemoteSwiftPackageReference "nunav-sdk-ios-distribution" */ = {
+		650849F62D54071D002BC270 /* XCRemoteSwiftPackageReference "nunav-navigation-sdk-ios-distribution" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Graphmasters/nunav-sdk-ios-distribution";
+			repositoryURL = "https://github.com/Graphmasters/nunav-navigation-sdk-ios-distribution";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.1;
+				minimumVersion = 2.0.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		6D04B51A2AF9177B001EDE62 /* NunavSDK */ = {
+		650849F72D54071D002BC270 /* NunavNavigationSDK */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6D04B5192AF9177B001EDE62 /* XCRemoteSwiftPackageReference "nunav-sdk-ios-distribution" */;
-			productName = NunavSDK;
+			package = 650849F62D54071D002BC270 /* XCRemoteSwiftPackageReference "nunav-navigation-sdk-ios-distribution" */;
+			productName = NunavNavigationSDK;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
