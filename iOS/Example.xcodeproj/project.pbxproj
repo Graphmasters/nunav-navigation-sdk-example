@@ -402,8 +402,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Graphmasters/nunav-navigation-sdk-ios-distribution";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.2;
+				kind = exactVersion;
+				version = 2.0.4;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
