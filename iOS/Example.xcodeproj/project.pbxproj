@@ -403,7 +403,7 @@
 			repositoryURL = "https://github.com/Graphmasters/nunav-navigation-sdk-ios-distribution";
 			requirement = {
 				kind = exactVersion;
-				version = 2.0.4;
+				version = 2.0.6;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
